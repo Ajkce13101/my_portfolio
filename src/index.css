@@ -1,5 +1,9 @@
 /* ===== Global Css ==== */
 
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 :root {
   --blue: #007bff;
   --white: white;
