@@ -212,15 +212,16 @@ const Navbar = () => {
                   smooth={true}
                   offset={10}
                   duration={500}
+                  className={`${
+                    toggle
+                      ? "visible"
+                      : "invisible transition-all duration-500 delay-200"
+                  }`}
                 >
                   <motion.li
                     variants={itemVariants}
                     key={nav.id}
-                    className={` ${
-                      toggle
-                        ? "visible"
-                        : "invisible transition-all duration-500 delay-200"
-                    } font-poppins font-medium cursor-pointer text-[16px]  w-full h-[5vh] flex items-center justify-center links  ${
+                    className={`  font-poppins font-medium cursor-pointer text-[16px]  w-full h-[5vh] flex items-center justify-center links  ${
                       active === nav.title ? "text-black" : "text-black"
                     }`}
                     onClick={() => {
