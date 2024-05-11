@@ -1,6 +1,7 @@
 import React from "react";
 import "./App.scss";
-import Home from "./components/Home/Home";
+import Home from "./Components/Home/Home";
+import About from "./Components/About/About";
 
 const App = () => {
   return (
@@ -10,7 +11,7 @@ const App = () => {
           {/* <Navbar /> */}
 
           <Home />
-          {/* <About /> */}
+          <About />
           {/* <Skills /> */}
           {/* <Education /> */}
         </div>
