@@ -1,64 +1,12 @@
 import React, { useRef, useEffect } from "react";
 import "./Contact.scss";
-import CallIcon from "@mui/icons-material/Call";
-import LocationOnIcon from "@mui/icons-material/LocationOn";
-import EmailIcon from "@mui/icons-material/Email";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/all";
 import Connect from "../connect/Connect";
 import Talk from "../talk/Talk";
 
 function Contact() {
-  gsap.registerPlugin(ScrollTrigger);
   const con1 = useRef();
-
-  useEffect(() => {
-    const to = gsap.timeline({
-      scrollTrigger: {
-        trigger: con1.current,
-      },
-    });
-
-    to.from(
-      con1.current,
-      {
-        duration: 0.6,
-        scaleX: 0.1,
-        transformOrigin: "left",
-        delay: 0.3,
-        repeat: 0,
-        opacity: 0,
-      },
-
-      []
-    )
-      .from(
-        ".card-wrapper",
-
-        {
-          duration: 0.3,
-          y: 200,
-          delay: 0.7,
-          repeat: 0,
-          opacity: 0,
-          stagger: 0.2,
-        },
-
-        []
-      )
-      .from(
-        ".contact-form",
-        {
-          duration: 0.3,
-          y: 200,
-          delay: 1,
-          repeat: 0,
-          opacity: 0,
-        },
-
-        []
-      );
-  }, []);
 
   return (
     <section className="contact-section" id="contact">

@@ -2,7 +2,6 @@ import React, { useEffect, useRef, useState } from "react";
 import "./Portfolio.scss";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import ArrowBackIosNewIcon from "@mui/icons-material/ArrowBackIosNew";
-import { convertLength } from "@mui/material/styles/cssUtils";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkIcon from "@mui/icons-material/Link";
 import { gsap } from "gsap";

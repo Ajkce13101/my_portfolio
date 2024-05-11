@@ -17,13 +17,9 @@ import Git from "../../img/git.svg";
 import Github from "../../img/github.svg";
 
 import { styled } from "@mui/material/styles";
-import Tooltip, { TooltipProps, tooltipClasses } from "@mui/material/Tooltip";
-import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/all";
+import Tooltip, { tooltipClasses } from "@mui/material/Tooltip";
 
 function Skills() {
-  gsap.registerPlugin(ScrollTrigger);
-
   const skill1 = useRef();
   const skill2 = useRef();
   const skill3 = useRef();
@@ -31,83 +27,6 @@ function Skills() {
   const skill5 = useRef();
   const skill6 = useRef();
 
-  useEffect(() => {
-    const to = gsap.timeline({
-      scrollTrigger: {
-        trigger: skill1.current,
-     
-      },
-    });
-    const tl = gsap.timeline({
-      scrollTrigger: {
-        trigger: skill4.current,
-     
-        end: "top 30%",
-        
-      },
-    });
-
-    to.from(
-      skill3.current,
-      {
-        duration: 0.6,
-        scaleX: 0.1,
-        transformOrigin: "left",
-        delay: 0.3,
-        repeat: 0,
-        opacity: 0,
-      },
-
-      []
-    )
-      .from(
-        skill4.current,
-        {
-          duration: 0.3,
-          x: -500,
-          delay: 0.7,
-          repeat: 0,
-          opacity: 0,
-        },
-
-        []
-      )
-      .from(
-        skill5.current,
-        {
-          duration: 0.3,
-          x: 500,
-          delay: 0.7,
-          repeat: 0,
-          opacity: 0,
-        },
-
-        []
-      );
-
-    tl.from(
-      ".progress-line",
-      {
-        duration: 0.1,
-        width: "0px",
-        delay: 0.1,
-        repeat: 0,
-        opacity: 0,
-      },
-
-      []
-    ).from(".tech-icon", {
-      duration: 0.8,
-     scale: 0,
-     delay:1,
-     ease: "power1.inOut",
-  stagger: {
-    from: "start",
-    ease: "power3.inOut",
-    amount: 2,
-  }
-    });
-  }, []);
   const icons = [
     { id: 1, icon: Html, value: "Html" },
     { id: 2, icon: Css, value: "CSS" },
@@ -126,7 +45,7 @@ function Skills() {
     { id: 16, icon: Github, value: "Github" },
   ];
 
-  const BootstrapTooltip = styled(({ className, ...props }: TooltipProps) => (
+  const BootstrapTooltip = styled(({ className, ...props }) => (
     <Tooltip {...props} arrow classes={{ popper: className }} />
   ))(({ theme }) => ({
     [`& .${tooltipClasses.arrow}`]: {
@@ -173,26 +92,24 @@ function Skills() {
             <div className="about-skills">
               {data.map((item) => {
                 return (
-                  
-                    <div className="skill-item" key={item.id}>
-                      <div className="skill-header">
-                        <div className="skill-title">{item.label}</div>
-                        <div className="skill-percentage">
-                          <p>
-                            <span className="counter">{item.width}</span>%
-                          </p>
-                        </div>
-                      </div>
-                      <div className="skill-bar">
-                        <div className="bar-inner">
-                          <div
-                            className="bar progress-line"
-                            style={{ width: `${item.width}%` }}
-                          ></div>
-                        </div>
+                  <div className="skill-item" key={item.id}>
+                    <div className="skill-header">
+                      <div className="skill-title">{item.label}</div>
+                      <div className="skill-percentage">
+                        <p>
+                          <span className="counter">{item.width}</span>%
+                        </p>
                       </div>
                     </div>
-                 
+                    <div className="skill-bar">
+                      <div className="bar-inner">
+                        <div
+                          className="bar progress-line"
+                          style={{ width: `${item.width}%` }}
+                        ></div>
+                      </div>
+                    </div>
+                  </div>
                 );
               })}
             </div>
@@ -204,26 +121,21 @@ function Skills() {
             <div className="row icons-row">
               {icons.map((item) => {
                 return (
-                  
-                    <BootstrapTooltip
-                      title={item.value}
-                      className="tooltip"
-                      
-                      key={item.id}
-                     
-                    >
-                      <div
+                  <BootstrapTooltip
+                    title={item.value}
+                    className="tooltip"
+                    key={item.id}
+                  >
+                    <div
                       ref={skill6}
-                     
-                        className="icon icon-lg icon-shape shadow rounded-circle mb-5 tech-icon"
-                        id="html-5"
-                      >
-                        <svg>
-                          <image href={item.icon}></image>
-                        </svg>
-                      </div>
-                    </BootstrapTooltip>
-                  
+                      className="icon icon-lg icon-shape shadow rounded-circle mb-5 tech-icon"
+                      id="html-5"
+                    >
+                      <svg>
+                        <image href={item.icon}></image>
+                      </svg>
+                    </div>
+                  </BootstrapTooltip>
                 );
               })}
             </div>
