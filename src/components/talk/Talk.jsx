@@ -4,8 +4,8 @@ import chat from "../../img/contact.jpg";
 
 const Talk = () => {
   return (
-    <div className="lets-talk row">
-      <div className="info">
+    <div className="lets-talk row flex">
+      <div className="info flex-1">
         <h2>Have A Project In Mind ?</h2>
         <p className="email">
           If you want to chat about a project with me, email me at:
@@ -17,11 +17,10 @@ const Talk = () => {
           design system.
         </p>
         <div>
-            <button className="btn green-btn">Hire Me</button>
+          <button className="btn green-btn">Hire Me</button>
         </div>
       </div>
-      <div className="image">
-
+      <div className="image flex-1">
         <img src={chat} alt="" />
       </div>
     </div>

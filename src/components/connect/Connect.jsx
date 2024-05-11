@@ -65,8 +65,8 @@ const Connect = () => {
       );
   };
   return (
-    <div className="row connect-section">
-      <div className="info">
+    <div className="row connect-section flex">
+      <div className="info flex-1">
         <h3>Lets Talk</h3>
         <p>
           I'm always happy to hear about exciting opportunities, join in
@@ -77,7 +77,7 @@ const Connect = () => {
           <img src={connectImg} alt="" />
         </div>
       </div>
-      <div className="form">
+      <div className="form flex-1">
         <div className="form-content">
           <form onSubmit={handleSubmit(onSubmit)} ref={form}>
             {/* register your input into the hook by invoking the "register" function */}

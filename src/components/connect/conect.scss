@@ -1,9 +1,10 @@
 .connect-section {
   color: black;
   margin-top: 50px;
+  padding: 0 25px;
 
   .info {
-    width: 50%;
+   
     h3 {
       color: green;
       font-weight: 900;
@@ -12,7 +13,7 @@
     }
   }
   .form {
-    width: 50%;
+   
     display: flex;
     justify-content: end;
 
@@ -83,13 +84,13 @@
   .connect-section {
     flex-direction: column;
     .info {
-      width: 100%;
+     
       img {
         width: 90%;
       }
     }
     .form {
-      width: 100%;
+     
       justify-content: center;
     }
   }
