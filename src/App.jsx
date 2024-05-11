@@ -1,15 +1,15 @@
 import React from "react";
 import "./App.scss";
-import Home from "./Components/Home/Home.jsx";
-import About from "./Components/About/About.jsx";
-import Skills from "./Components/Skills/Skills.jsx";
-import Education from "./Components/Education/Education.jsx";
-import Portfolio from "./Components/Portfolio/Portfolio.jsx";
-import Footer from "./Components/Footer/Footer.jsx";
-import Contact from "./Components/Contact/Contact.jsx";
+import Home from "./components/Home/Home.jsx";
+import About from "./components/About/About.jsx";
+import Skills from "./components/Skills/Skills.jsx";
+import Education from "./components/Education/Education.jsx";
+import Portfolio from "./components/Portfolio/Portfolio.jsx";
+import Footer from "./components/Footer/Footer.jsx";
+import Contact from "./components/Contact/Contact.jsx";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import Navbar from "./Components/Navabr/Navbar.jsx";
+import Navbar from "./components/Navabr/Navbar.jsx";
 
 const App = () => {
   return (
