@@ -185,7 +185,7 @@ const Navbar = () => {
             variants={navVariants}
             initial="initial"
             animate="animate"
-            className="bg-white rounded-full p-1.5 z-20 "
+            className="bg-white rounded-full p-1.5 z-20 shadow-lg shadow:primary"
           >
             <img
               src={toggle ? closeBlack : menu}
@@ -212,14 +212,11 @@ const Navbar = () => {
                   smooth={true}
                   offset={10}
                   duration={500}
-                  key={nav.id}
                 >
                   <motion.li
                     variants={itemVariants}
                     key={nav.id}
-                    className={`${
-                      toggle ? "opacity-100" : "opacity-0"
-                    } font-poppins font-medium cursor-pointer text-[16px]  w-full h-[5vh] flex items-center justify-center links  ${
+                    className={`font-poppins font-medium cursor-pointer text-[16px]  w-full h-[5vh] flex items-center justify-center links  ${
                       active === nav.title ? "text-black" : "text-black"
                     }`}
                     onClick={() => {
@@ -227,7 +224,15 @@ const Navbar = () => {
                       setActive(nav.title);
                     }}
                   >
-                    {nav.title} <span></span>
+                    <a
+                      className={` ${
+                        toggle
+                          ? "opacity-100"
+                          : "opacity-0 transition-all duration-500 delay-200"
+                      }  w-full h-full text-center flex items-center justify-center relative font-semibold`}
+                    >
+                      {nav.title} <span></span>
+                    </a>
                   </motion.li>
                 </Link>
               ))}
