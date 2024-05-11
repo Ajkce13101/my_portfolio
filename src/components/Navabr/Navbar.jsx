@@ -197,7 +197,7 @@ const Navbar = () => {
 
           <motion.div
             animate={toggle ? "open" : "close"}
-            className={`flex p-6  fixed top-0 right-0  min-w-[240px] z-10  h-full max-sm:w-[50vw] `}
+            className={` flex p-6  fixed top-0 right-0  min-w-[240px] z-10  h-full max-sm:w-[50vw] `}
           >
             <motion.div className="background  absolute " variants={variants} />
             <motion.ul
@@ -216,7 +216,11 @@ const Navbar = () => {
                   <motion.li
                     variants={itemVariants}
                     key={nav.id}
-                    className={`font-poppins font-medium cursor-pointer text-[16px]  w-full h-[5vh] flex items-center justify-center links  ${
+                    className={` ${
+                      toggle
+                        ? "visible"
+                        : "invisible transition-all duration-500 delay-200"
+                    } font-poppins font-medium cursor-pointer text-[16px]  w-full h-[5vh] flex items-center justify-center links  ${
                       active === nav.title ? "text-black" : "text-black"
                     }`}
                     onClick={() => {
@@ -225,11 +229,7 @@ const Navbar = () => {
                     }}
                   >
                     <a
-                      className={` ${
-                        toggle
-                          ? "opacity-100"
-                          : "opacity-0 transition-all duration-500 delay-200"
-                      }  w-full h-full text-center flex items-center justify-center relative font-semibold`}
+                      className={`flex w-full h-full text-center  items-center justify-center relative font-semibold`}
                     >
                       {nav.title} <span></span>
                     </a>
