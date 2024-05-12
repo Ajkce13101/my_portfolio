@@ -2,7 +2,6 @@
   color: black;
   margin-top: 50px;
   padding: 0 25px;
-  max-width: 100vw;
 
   .info {
    
@@ -85,13 +84,13 @@
   .connect-section {
     flex-direction: column;
     .info {
-      width: 100%;
+      // width: 100%;
       img {
-        width: 90%;
+        // width: 90%;
       }
     }
     .form {
-      width: 100%;
+      // width: 100%;
       justify-content: center;
     }
   }
