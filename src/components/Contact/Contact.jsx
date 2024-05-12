@@ -24,12 +24,10 @@ function Contact() {
         </div>
 
         {/* Contact Form */}
-        {/* 
-        
-        
+
         <div className="row contact-info">
           <Connect></Connect>
-        </div>*/}
+        </div>
 
         <div className="project">
           <Talk></Talk>
