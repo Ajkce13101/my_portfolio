@@ -65,7 +65,7 @@ const Connect = () => {
       );
   };
   return (
-    <div className="row connect-section flex">
+    <div className="row connect-section flex max-w-[100vw] overflow-x-hidden">
       <div className="info flex-1">
         <h3>Lets Talk</h3>
         <p>
