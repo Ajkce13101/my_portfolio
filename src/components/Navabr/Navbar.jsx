@@ -6,7 +6,7 @@ import menu from "../../img/menu.png";
 import closeBlack from "../../img/closeBlack.png";
 import { Link, animateScroll as scroll } from "react-scroll";
 import "./Navbar.scss";
-import { AnimatePresence, delay, motion } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
 
 const navLinks = [
   {
@@ -106,7 +106,6 @@ const Navbar = () => {
     open: {
       y: 0,
       opacity: 1,
-      delay: 1,
     },
     close: {
       y: 50,
@@ -199,9 +198,10 @@ const Navbar = () => {
           <AnimatePresence>
             {toggle && (
               <motion.div
+                initial="close"
                 animate={toggle ? "open" : "close"}
                 exit="close"
-                className={`flex p-6  fixed top-0 right-0  min-w-[240px] z-10  h-full max-sm:w-[50vw] `}
+                className={` flex p-6  fixed top-0 right-0  min-w-[240px] z-10  h-full max-sm:w-[50vw] `}
               >
                 <motion.div
                   className="background  absolute "
