@@ -6,7 +6,7 @@ import menu from "../../img/menu.png";
 import closeBlack from "../../img/closeBlack.png";
 import { Link, animateScroll as scroll } from "react-scroll";
 import "./Navbar.scss";
-import { motion } from "framer-motion";
+import { AnimatePresence, delay, motion } from "framer-motion";
 
 const navLinks = [
   {
@@ -100,15 +100,13 @@ const Navbar = () => {
         staggerChildren: 0.05,
         staggerDirection: -1,
       },
-      transitionEnd: {
-        display: "hidden",
-      },
     },
   };
   const itemVariants = {
     open: {
       y: 0,
       opacity: 1,
+      delay: 1,
     },
     close: {
       y: 50,
@@ -198,50 +196,58 @@ const Navbar = () => {
             />
           </motion.div>
 
-          <motion.div
-            animate={toggle ? "open" : "close"}
-            className={`flex p-6  fixed top-0 right-0  min-w-[240px] z-10  h-full max-sm:w-[50vw] `}
-          >
-            <motion.div className="background  absolute " variants={variants} />
-            <motion.ul
-              variants={listVarient}
-              className="list-none flex justify-center items-center flex-1 flex-col  w-full text-center gap-12 delay-1000"
-            >
-              {navLinks.map((nav) => (
-                <Link
-                  activeClass="active"
-                  to={nav.id}
-                  spy={true}
-                  smooth={true}
-                  offset={10}
-                  duration={500}
-                  className={`${
-                    toggle
-                      ? "visible"
-                      : "invisible transition-all duration-500 delay-200"
-                  }`}
+          <AnimatePresence>
+            {toggle && (
+              <motion.div
+                animate={toggle ? "open" : "close"}
+                exit="close"
+                className={`flex p-6  fixed top-0 right-0  min-w-[240px] z-10  h-full max-sm:w-[50vw] `}
+              >
+                <motion.div
+                  className="background  absolute "
+                  variants={variants}
+                />
+                <motion.ul
+                  variants={listVarient}
+                  className="list-none flex justify-center items-center flex-1 flex-col  w-full text-center gap-12 delay-1000"
                 >
-                  <motion.li
-                    variants={itemVariants}
-                    key={nav.id}
-                    className={`  font-poppins font-medium cursor-pointer text-[16px]  w-full h-[5vh] flex items-center justify-center links  ${
-                      active === nav.title ? "text-black" : "text-black"
-                    }`}
-                    onClick={() => {
-                      setToggle(!toggle);
-                      setActive(nav.title);
-                    }}
-                  >
-                    <a
-                      className={`flex w-full h-full text-center  items-center justify-center relative font-semibold`}
+                  {navLinks.map((nav) => (
+                    <Link
+                      activeClass="active"
+                      to={nav.id}
+                      spy={true}
+                      smooth={true}
+                      offset={10}
+                      duration={500}
+                      className={`${
+                        toggle
+                          ? "visible"
+                          : "invisible transition-all duration-500 delay-200"
+                      }`}
                     >
-                      {nav.title} <span></span>
-                    </a>
-                  </motion.li>
-                </Link>
-              ))}
-            </motion.ul>
-          </motion.div>
+                      <motion.li
+                        variants={itemVariants}
+                        key={nav.id}
+                        className={`  font-poppins font-medium cursor-pointer text-[16px]  w-full h-[5vh] flex items-center justify-center links  ${
+                          active === nav.title ? "text-black" : "text-black"
+                        }`}
+                        onClick={() => {
+                          setToggle(!toggle);
+                          setActive(nav.title);
+                        }}
+                      >
+                        <a
+                          className={`flex w-full h-full text-center  items-center justify-center relative font-semibold`}
+                        >
+                          {nav.title} <span></span>
+                        </a>
+                      </motion.li>
+                    </Link>
+                  ))}
+                </motion.ul>
+              </motion.div>
+            )}
+          </AnimatePresence>
         </div>
       </div>
     </nav>
