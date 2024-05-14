@@ -472,7 +472,9 @@ function Portfolio() {
                 <button
                   type="button"
                   key={btn.id}
-                  className={active == btn.id ? "active" : ""}
+                  className={`${
+                    active == btn.id ? "active" : ""
+                  } px-[25px] py-[10px] max-md:px-[15px] max-md:py-[5px] max-md:text-[14px]`}
                   id={btn.id}
                   value={btn.value}
                   onClick={setItems}

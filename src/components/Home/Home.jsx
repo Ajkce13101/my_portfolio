@@ -83,10 +83,10 @@ function Home() {
       <div className="wrapper">
         <div className="row align-items-center">
           <div className="home-text">
-            <h3 className="hello">
+            <h3 className="hello max-md:text-[20px] text-[30px]">
               <Letter letterClass={letterClass} strArray={hello} idx={1} />
             </h3>
-            <h3 className="name">
+            <h3 className="name max-md:text-[35px] text-[50px]">
               <Letter
                 letterClass={`${letterClass} `}
                 strArray={myname}

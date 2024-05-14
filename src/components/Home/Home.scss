@@ -2,12 +2,11 @@
     position: relative;
     z-index: 1;
     overflow: hidden;
-    padding-top: 110px;
-    margin-bottom: 200px;
     height: 100vh;
     display: flex;
     align-items: center;
     justify-items: center;
+  
 
     .home-text {
         flex: 0 0 50%;
@@ -15,14 +14,14 @@
         padding: 0 25px;
 
         .hello {
-            font-size: 30px;
+          
             font-weight: 600;
             letter-spacing: 4px;
             color: var(--white);
         }
 
         .name {
-            font-size: 50px;
+          
             font-weight: 700;
             margin-top: 15px;
 
@@ -168,6 +167,7 @@
         .header-social {
             display: none;
         }
+                
 
         .home-image {
             display: none;
