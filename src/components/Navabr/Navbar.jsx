@@ -100,6 +100,9 @@ const Navbar = () => {
         staggerChildren: 0.05,
         staggerDirection: -1,
       },
+      transitionEnd: {
+        display: "hidden",
+      },
     },
   };
   const itemVariants = {
@@ -197,7 +200,7 @@ const Navbar = () => {
 
           <motion.div
             animate={toggle ? "open" : "close"}
-            className={` flex p-6  fixed top-0 right-0  min-w-[240px] z-10  h-full max-sm:w-[50vw] `}
+            className={`flex p-6  fixed top-0 right-0  min-w-[240px] z-10  h-full max-sm:w-[50vw] `}
           >
             <motion.div className="background  absolute " variants={variants} />
             <motion.ul
