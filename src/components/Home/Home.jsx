@@ -12,6 +12,7 @@ import { gsap } from "gsap";
 import { Link, animateScroll as scroll } from "react-scroll";
 // import Lottie from "react-lottie";
 import CodingLottie from "./lottie.json";
+import ComputerCanvas from "./ComputerCanvas.jsx";
 
 function Home() {
   const defaultOptions = {
@@ -114,8 +115,9 @@ function Home() {
               </span>
             </Link>
           </div>
-          <div className="home-image" ref={lottie}>
-            {/* <Lottie animationData={CodingLottie} loop={true}></Lottie> */}
+          <div className="home-image"></div>
+          <div className=" home-image absolute top-0 bottom-0 right-[100px] w-[40vw]  flex items-center justify-center h-[100vh]">
+            <ComputerCanvas></ComputerCanvas>
           </div>
         </div>
       </div>
