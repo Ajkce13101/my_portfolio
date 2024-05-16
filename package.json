@@ -23,6 +23,7 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-hook-form": "^7.51.4",
+    "react-parallax-tilt": "^1.7.226",
     "react-scroll": "^1.9.0",
     "react-spinners": "^0.13.8",
     "react-toastify": "^10.0.5",

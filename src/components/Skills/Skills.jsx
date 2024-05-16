@@ -15,6 +15,8 @@ import Bootstrap from "../../img/bootstrap.svg";
 import Material from "../../img/material.svg";
 import Git from "../../img/git.svg";
 import Github from "../../img/github.svg";
+import VerifiedIcon from "@mui/icons-material/Verified";
+import Tilt from "react-parallax-tilt";
 
 import { styled } from "@mui/material/styles";
 import Tooltip, { tooltipClasses } from "@mui/material/Tooltip";
@@ -83,37 +85,155 @@ function Skills() {
           </div>
         </div>
 
-        <div className="row">
-          <div className="skill-content" ref={skill4}>
-            <div className="section-title">
-              <h3 className="sub-title-white">Profeciency</h3>
-            </div>
-
-            <div className="about-skills">
-              {data.map((item) => {
-                return (
-                  <div className="skill-item" key={item.id}>
-                    <div className="skill-header">
-                      <div className="skill-title">{item.label}</div>
-                      <div className="skill-percentage">
-                        <p>
-                          <span className="counter">{item.width}</span>%
-                        </p>
-                      </div>
-                    </div>
-                    <div className="skill-bar">
-                      <div className="bar-inner">
-                        <div
-                          className="bar progress-line"
-                          style={{ width: `${item.width}%` }}
-                        ></div>
-                      </div>
-                    </div>
+        <div className=" flex gap-10 items-center justify-between max-md:flex-col">
+          <div className="frontend h-full w-full">
+            <Tilt>
+              <div className="info">
+                <h1 className="title">Frontend:</h1>
+                <div className="list pr-2">
+                  <div className="listItem">
+                    <span>
+                      <VerifiedIcon className="check"></VerifiedIcon>
+                    </span>
+                    <span className="tech">React JS</span>
                   </div>
-                );
-              })}
-            </div>
+                  <div className="listItem">
+                    <span>
+                      <VerifiedIcon className="check"></VerifiedIcon>
+                    </span>
+                    <span className="tech"> Next JS</span>
+                  </div>
+                  <div className="listItem">
+                    <span>
+                      <VerifiedIcon className="check"></VerifiedIcon>
+                    </span>
+                    <span className="tech"> Typescript</span>
+                  </div>
+                  <div className="listItem">
+                    <span>
+                      <VerifiedIcon className="check"></VerifiedIcon>
+                    </span>
+                    <span className="tech"> React Native</span>
+                  </div>
+                  <div className="listItem">
+                    <span>
+                      <VerifiedIcon className="check"></VerifiedIcon>
+                    </span>
+                    <span className="tech"> Redux</span>
+                  </div>
+                  <div className="listItem">
+                    <span>
+                      <VerifiedIcon className="check"></VerifiedIcon>
+                    </span>
+                    <span className="tech"> Sass</span>
+                  </div>
+                  <div className="listItem">
+                    <span>
+                      <VerifiedIcon className="check"></VerifiedIcon>
+                    </span>
+                    <span className="tech"> Styled Components</span>
+                  </div>
+                  <div className="listItem">
+                    <span>
+                      <VerifiedIcon className="check"></VerifiedIcon>
+                    </span>
+                    <span className="tech"> Tailwind CSS</span>
+                  </div>
+                  <div className="listItem">
+                    <span>
+                      <VerifiedIcon className="check"></VerifiedIcon>
+                    </span>
+                    <span className="tech">Figma</span>
+                  </div>
+                  <div className="listItem">
+                    <span>
+                      <VerifiedIcon className="check"></VerifiedIcon>
+                    </span>
+                    <span className="tech">Jest and React Testing Library</span>
+                  </div>
+                </div>
+              </div>
+            </Tilt>
           </div>
+
+          <div className="frontend w-full h-full ">
+            <Tilt>
+              <div className="info h-full">
+                <h1 className="title">Backend:</h1>
+                <div className="list">
+                  <div className="listItem">
+                    <span>
+                      <VerifiedIcon className="check"></VerifiedIcon>
+                    </span>
+                    <span className="tech">Node JS</span>
+                  </div>
+                  <div className="listItem">
+                    <span>
+                      <VerifiedIcon className="check"></VerifiedIcon>
+                    </span>
+                    <span className="tech"> Express JS</span>
+                  </div>
+                  <div className="listItem">
+                    <span>
+                      <VerifiedIcon className="check"></VerifiedIcon>
+                    </span>
+                    <span className="tech"> Flask</span>
+                  </div>
+                  <div className="listItem">
+                    <span>
+                      <VerifiedIcon className="check"></VerifiedIcon>
+                    </span>
+                    <span className="tech"> My SQL</span>
+                  </div>
+                  <div className="listItem">
+                    <span>
+                      <VerifiedIcon className="check"></VerifiedIcon>
+                    </span>
+                    <span className="tech"> PostgreSQL</span>
+                  </div>
+                  <div className="listItem">
+                    <span>
+                      <VerifiedIcon className="check"></VerifiedIcon>
+                    </span>
+                    <span className="tech"> MongoDB</span>
+                  </div>
+                  <div className="listItem">
+                    <span>
+                      <VerifiedIcon className="check"></VerifiedIcon>
+                    </span>
+                    <span className="tech"> AWS & Azure</span>
+                  </div>
+                  <div className="listItem">
+                    <span>
+                      <VerifiedIcon className="check"></VerifiedIcon>
+                    </span>
+                    <span className="tech"> Docker</span>
+                  </div>
+                  <div className="listItem">
+                    <span>
+                      <VerifiedIcon className="check"></VerifiedIcon>
+                    </span>
+                    <span className="tech">CI CD pipelines</span>
+                  </div>
+                  <div className="listItem">
+                    <span>
+                      <VerifiedIcon className="check"></VerifiedIcon>
+                    </span>
+                    <span className="tech">Python</span>
+                  </div>
+                  <div className="listItem">
+                    <span>
+                      <VerifiedIcon className="check"></VerifiedIcon>
+                    </span>
+                    <span className="tech">Python</span>
+                  </div>
+                </div>
+              </div>
+            </Tilt>
+          </div>
+        </div>
+
+        <div className="row">
           <div className="skill-img" ref={skill5}>
             <div className="section-title">
               <h3 className="sub-title-white">Tools & Technologies:</h3>

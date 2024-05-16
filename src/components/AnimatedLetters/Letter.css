@@ -1,0 +1,159 @@
+.text-animate {
+  display: inline-block;
+  opacity: 0;
+  animation: bounceIn;
+  animation-duration: 1s;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+  min-width: 10px;
+}
+
+.text-animate-hover {
+  min-width: 10px;
+  display: inline-block;
+  animation-fill-mode: both;
+}
+.text-animate-hover:hover {
+  animation: rubberBand 1s;
+  color: #ffd700;
+}
+
+.text-animate._1 {
+  animation-delay: calc(1 / 10s);
+}
+
+.text-animate._2 {
+  animation-delay: calc(2 / 10s);
+}
+
+.text-animate._3 {
+  animation-delay: calc(3 / 10s);
+}
+
+.text-animate._4 {
+  animation-delay: calc(4 / 10s);
+}
+
+.text-animate._5 {
+  animation-delay: calc(5 / 10s);
+}
+
+.text-animate._6 {
+  animation-delay: calc(6 / 10s);
+}
+
+.text-animate._7 {
+  animation-delay: calc(7 / 10s);
+}
+
+.text-animate._8 {
+  animation-delay: calc(8 / 10s);
+}
+
+.text-animate._9 {
+  animation-delay: calc(9 / 10s);
+}
+
+.text-animate._10 {
+  animation-delay: calc(10 / 10s);
+}
+
+.text-animate._11 {
+  animation-delay: calc(11 / 10s);
+}
+
+.text-animate._12 {
+  animation-delay: calc(12 / 10s);
+}
+
+.text-animate._13 {
+  animation-delay: calc(13 / 10s);
+}
+
+.text-animate._14 {
+  animation-delay: calc(14 / 10s);
+}
+
+.text-animate._15 {
+  animation-delay: calc(15 / 10s);
+}
+
+.text-animate._16 {
+  animation-delay: calc(16 / 10s);
+}
+
+.text-animate._17 {
+  animation-delay: calc(17 / 10s);
+}
+
+.text-animate._18 {
+  animation-delay: calc(18 / 10s);
+}
+
+.text-animate._19 {
+  animation-delay: calc(19 / 10s);
+}
+
+.text-animate._20 {
+  animation-delay: calc(20 / 10s);
+}
+
+.text-animate._21 {
+  animation-delay: calc(21 / 10s);
+}
+
+.text-animate._22 {
+  animation-delay: calc(22 / 10s);
+}
+
+.text-animate._23 {
+  animation-delay: calc(23 / 10s);
+}
+
+.text-animate._24 {
+  animation-delay: calc(24 / 10s);
+}
+
+.text-animate._25 {
+  animation-delay: calc(25 / 10s);
+}
+
+.text-animate._26 {
+  animation-delay: calc(26 / 10s);
+}
+
+.text-animate._27 {
+  animation-delay: calc(27 / 10s);
+}
+
+.text-animate._28 {
+  animation-delay: calc(28 / 10s);
+}
+
+.text-animate._29 {
+  animation-delay: calc(29 / 10s);
+}
+
+.text-animate._30 {
+  animation-delay: calc(30 / 10s);
+}
+
+.text-animate._31 {
+  animation-delay: calc(31 / 10s);
+}
+
+.text-animate._32 {
+  animation-delay: calc(32 / 10s);
+}
+
+.text-animate._33 {
+  animation-delay: calc(33 / 10s);
+}
+
+.text-animate._34 {
+  animation-delay: calc(34 / 10s);
+}
+
+.text-animate._35 {
+  animation-delay: calc(35 / 10s);
+}/*# sourceMappingURL=Letter.css.map */
