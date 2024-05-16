@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 
 import { styles } from "../../../style";
 
@@ -45,8 +45,10 @@ const Navbar = () => {
       const scrollTop = window.scrollY;
       if (scrollTop > 50) {
         setScrolled(true);
+        navref.current.classList.add("stickyNav");
       } else {
         setScrolled(false);
+        navref.current.classList.remove("stickyNav");
       }
     };
 
@@ -112,8 +114,11 @@ const Navbar = () => {
       opacity: 0,
     },
   };
+
+  const navref = useRef();
   return (
     <nav
+      ref={navref}
       className={`${
         styles.paddingX
       } nav w-full flex items-center  transition-all ease-in-out duration-1000 fixed top-0 z-20 ${
@@ -170,7 +175,7 @@ const Navbar = () => {
                 variants={navVariants}
                 key={nav.id}
                 className={`
-              ${scrolled ? "text-black" : "text-white"}
+              ${scrolled ? "text-black font-bold text-[16px]" : "text-white"}
               text-[18px] font-medium cursor-pointer relative links`}
               >
                 {nav.title} <span></span>
