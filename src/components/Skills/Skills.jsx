@@ -89,7 +89,7 @@ function Skills() {
           <div className="frontend h-full w-full">
             <Tilt>
               <div className="info">
-                <h1 className="title">Frontend:</h1>
+                <h1 className="title blue-text-gradient">Frontend:</h1>
                 <div className="list pr-2">
                   <div className="listItem">
                     <span>
@@ -158,8 +158,8 @@ function Skills() {
 
           <div className="frontend w-full h-full ">
             <Tilt>
-              <div className="info h-full">
-                <h1 className="title">Backend:</h1>
+              <div className="info h-full ">
+                <p className="title blue-text-gradient ">Backend:</p>
                 <div className="list">
                   <div className="listItem">
                     <span>
