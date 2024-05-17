@@ -177,6 +177,12 @@ function Skills() {
                     <span>
                       <VerifiedIcon className="check"></VerifiedIcon>
                     </span>
+                    <span className="tech">Rest APIs</span>
+                  </div>
+                  <div className="listItem">
+                    <span>
+                      <VerifiedIcon className="check"></VerifiedIcon>
+                    </span>
                     <span className="tech"> Flask</span>
                   </div>
                   <div className="listItem">
@@ -214,12 +220,6 @@ function Skills() {
                       <VerifiedIcon className="check"></VerifiedIcon>
                     </span>
                     <span className="tech">CI CD pipelines</span>
-                  </div>
-                  <div className="listItem">
-                    <span>
-                      <VerifiedIcon className="check"></VerifiedIcon>
-                    </span>
-                    <span className="tech">Python</span>
                   </div>
                   <div className="listItem">
                     <span>
