@@ -19,15 +19,9 @@
 - [Getting Started](#toolbox-getting-started)
 - [Screenshots](#camera-screenshots)
 - [Tech Stack](#gear-tech-stack)
-- [Stats](#wrench-stats)
-- [Contribute](#raised_hands-contribute)
 - [Acknowledgements](#gem-acknowledgements)
-- [Buy Me a Coffee](#coffee-buy-me-a-coffee)
-- [Follow Me](#rocket-follow-me)
 - [Learn More](#books-learn-more)
-- [Deploy on Vercel](#page_with_curl-deploy-on-vercel)
-- [Give A Star](#star-give-a-star)
-- [Star History](#star2-star-history)
+- [Deploy on Netlify](#page_with_curl: Deploy on Netlify)
 - [Give A Star](#star-give-a-star)
 
 </details>
@@ -88,46 +82,45 @@ modern-portfolio/
 
 ## :gear: Tech Stack
 
-[![React JS](https://skillicons.dev/icons?i=react "React JS")](https://react.dev/ "React JS") [![Next JS](https://skillicons.dev/icons?i=next "Next JS")](https://nextjs.org/ "Next JS") [![JavaScript](https://skillicons.dev/icons?i=js "JavaScript")](https://developer.mozilla.org/en-US/docs/Web/JavaScript "JavaScript") [![Tailwind CSS](https://skillicons.dev/icons?i=tailwind "Tailwind CSS")](https://tailwindcss.com/ "Tailwind CSS") [![Netlify](https://skillicons.dev/icons?i=netlify "Netlify")](https://netlify.app/ "Netlify")
+[![React JS](https://skillicons.dev/icons?i=react "React JS")](https://react.dev/ "React JS") [![Next JS](https://skillicons.dev/icons?i=vite "Next JS")](https://vitejs.dev/ "Next JS") [![JavaScript](https://skillicons.dev/icons?i=js "JavaScript")](https://developer.mozilla.org/en-US/docs/Web/JavaScript "JavaScript") [![Tailwind CSS](https://skillicons.dev/icons?i=tailwind "Tailwind CSS")](https://tailwindcss.com/ "Tailwind CSS") [![Netlify](https://skillicons.dev/icons?i=netlify "Netlify")](https://netlify.app/ "Netlify")
 
 ## :gem: Acknowledgements
 
-Useful resources and dependencies that are used in Modern Portfolio.
+Useful resources and dependencies that are used in My Portfolio.
 
 ### Production Dependencies
 
-- [@next/font](https://www.npmjs.com/package/@next/font): ^13.4.4
+- [vite](https://www.npmjs.com/package/vite): 13.4.3
 - [framer-motion](https://www.npmjs.com/package/framer-motion): ^10.12.16
-- [next](https://www.npmjs.com/package/next): 13.4.3
 - [react](https://www.npmjs.com/package/react): 18.2.0
-- [react-countup](https://www.npmjs.com/package/react-countup): ^6.4.2
+- [react-srcoll](https://www.npmjs.com/package/react-scroll): ^6.4.2
 - [react-dom](https://www.npmjs.com/package/react-dom): 18.2.0
+- [react-hook-form](https://www.npmjs.com/package/react-hook-form): 7.51.4
 - [react-icons](https://www.npmjs.com/package/react-icons): ^4.8.0
 - [react-tsparticles](https://www.npmjs.com/package/react-tsparticles): ^2.9.3
-- [swiper](https://www.npmjs.com/package/swiper): ^9.4.0
-- [tailwind-scrollbar](https://www.npmjs.com/package/tailwind-scrollbar): ^3.0.4
 - [tsparticles](https://www.npmjs.com/package/tsparticles): ^2.9.3
 
 ### Development Dependencies
 
+- [sass](https://www.npmjs.com/package/sass): ^1.77.1
 - [autoprefixer](https://www.npmjs.com/package/autoprefixer): ^10.4.14
 - [eslint](https://www.npmjs.com/package/eslint): 8.41.0
-- [eslint-config-next](https://www.npmjs.com/package/eslint-config-next): 13.4.3
+- [eslint-plugin-react-hooks](https://www.npmjs.com/package/eslint-plugin-react-hooks): 4.6.0
 - [postcss](https://www.npmjs.com/package/postcss): ^8.4.23
 - [tailwindcss](https://www.npmjs.com/package/tailwindcss): ^3.3.2
 
 ## :books: Learn More
 
-To learn more about Next.js, take a look at the following resources:
+To learn more about React.js, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- [React.js Documentation](https://react.dev/) - learn about React.js library.
+- [Learn Vite.js](https://react.dev/) - Vite Next Generation Frontend Tooling.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+You can check out [the React.js GitHub repository](https://github.com/facebook/react) - your feedback and contributions are welcome!
 
 ## :page_with_curl: Deploy on Netlify
 
-The easiest way to deploy your React.js app is to use the [Netlify Platform](https://docs.netlify.com/frameworks/react/) 
+The easiest way to deploy your React.js app is to use the [Netlify Platform](https://docs.netlify.com/frameworks/react/)
 
 Check out [Vite.js deployment documentation](https://vitejs.dev/guide/static-deploy/) for more details.
 
