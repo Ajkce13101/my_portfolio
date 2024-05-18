@@ -21,7 +21,7 @@
 - [Tech Stack](#gear-tech-stack)
 - [Acknowledgements](#gem-acknowledgements)
 - [Learn More](#books-learn-more)
-- [Deploy on Netlify](#page_with_curl: Deploy on Netlify)
+- [Deploy on Netlify](#Deploy-on-Netlify)
 - [Give A Star](#star-give-a-star)
 
 </details>
