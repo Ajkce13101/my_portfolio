@@ -1,6 +1,6 @@
 <a name="readme-top"></a>
 
-# Modern Portfolio using Next.js and Framer Motion
+# Modern Portfolio using React.js and Framer Motion
 
 ![Modern Portfolio using React JS and Framer Motion](/.github/images/img_main.png "Modern Portfolio using React JS and Framer Motion")
 
