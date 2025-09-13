@@ -26,15 +26,16 @@ function About() {
             </div>
 
             <p>
-              Enthusiastic Web Developer with more than 1 year of experience in
-              designing and implementing innovative web solutions. Proven
-              expertise in front-end and back-end development, with a passion
-              for staying updated on emerging technologies. Excited to
-              contribute technical proficiency and creative problem-solving
-              skills to a dynamic development team. Currently specializing in
-              both frontend and backend technologies like JavaScript,
-              Typescript, and React JS, React Native, Python, Node JS with a
-              keen eye on becoming a Full Stack Developer.
+              Enthusiastic IT Support professional with hands-on experience in
+              troubleshooting, technical support, and customer service. Skilled
+              in resolving issues across Windows systems, Office 365, Active
+              Directory, and network connectivity, including VLANs, DNS, DHCP,
+              and VPNs. Passionate about technology and continuous learning,
+              with strong communication skills and a proven ability to assist
+              users effectively. Currently building expertise in Microsoft 365,
+              Azure Active Directory, and server administration, while
+              strengthening networking knowledge to grow into advanced IT
+              support and system administration roles
             </p>
 
             <button className="btn btn-yellow slidebtn downloadbtn">
