@@ -85,158 +85,128 @@ function Skills() {
           </div>
         </div>
 
+        <div className="section-title">
+          <h4 className=" title blue-text-gradient ">Proficiency:</h4>
+        </div>
         <div className=" flex gap-10 items-center justify-between max-md:flex-col">
           <div className="frontend h-full w-full">
             <Tilt>
               <div className="info">
-                <h1 className="title blue-text-gradient">Frontend:</h1>
                 <div className="list pr-2">
-                  <div className="listItem">
+                  <div className="listItem pb-4 ">
                     <span>
                       <VerifiedIcon className="check"></VerifiedIcon>
                     </span>
-                    <span className="tech">React JS</span>
+                    <span className="tech">
+                      Windows 10/11 & Mac OS troubleshooting
+                    </span>
                   </div>
-                  <div className="listItem">
+                  <div className="listItem pb-4">
                     <span>
                       <VerifiedIcon className="check"></VerifiedIcon>
                     </span>
-                    <span className="tech"> Next JS</span>
+                    <span className="tech">
+                      {" "}
+                      Microsoft Office 365 Suite & SharePoint/OneDrive
+                    </span>
                   </div>
-                  <div className="listItem">
+                  <div className="listItem pb-4">
                     <span>
                       <VerifiedIcon className="check"></VerifiedIcon>
                     </span>
-                    <span className="tech"> Typescript</span>
+                    <span className="tech">
+                      {" "}
+                      Remote Support Tools: ConnectWise Control, TeamViewer,
+                      AnyDesk, RDP
+                    </span>
                   </div>
-                  <div className="listItem">
+                  <div className="listItem pb-4">
                     <span>
                       <VerifiedIcon className="check"></VerifiedIcon>
                     </span>
-                    <span className="tech"> React Native</span>
+                    <span className="tech">
+                      {" "}
+                      L1/2 Virtualisation: VMware, Hyper-V, VirtualBox, Proxmox
+                      VE, VMware vSphere / ESXi
+                    </span>
                   </div>
-                  <div className="listItem">
+                  <div className="listItem pb-4">
                     <span>
                       <VerifiedIcon className="check"></VerifiedIcon>
                     </span>
-                    <span className="tech"> Redux</span>
-                  </div>
-                  <div className="listItem">
-                    <span>
-                      <VerifiedIcon className="check"></VerifiedIcon>
+                    <span className="tech">
+                      {" "}
+                      Networking: VLANs, TCP/IP, DNS, DHCP, VPN, Routing &
+                      Switching, LAN/WAN
                     </span>
-                    <span className="tech"> Sass</span>
-                  </div>
-                  <div className="listItem">
-                    <span>
-                      <VerifiedIcon className="check"></VerifiedIcon>
-                    </span>
-                    <span className="tech"> Styled Components</span>
-                  </div>
-                  <div className="listItem">
-                    <span>
-                      <VerifiedIcon className="check"></VerifiedIcon>
-                    </span>
-                    <span className="tech"> Tailwind CSS</span>
-                  </div>
-                  <div className="listItem">
-                    <span>
-                      <VerifiedIcon className="check"></VerifiedIcon>
-                    </span>
-                    <span className="tech">Figma</span>
-                  </div>
-                  <div className="listItem">
-                    <span>
-                      <VerifiedIcon className="check"></VerifiedIcon>
-                    </span>
-                    <span className="tech">Jest and React Testing Library</span>
                   </div>
                 </div>
               </div>
             </Tilt>
           </div>
-
-          <div className="frontend w-full h-full ">
+          <div className="frontend h-full w-full">
             <Tilt>
-              <div className="info h-full ">
-                <p className="title blue-text-gradient ">Backend:</p>
-                <div className="list">
-                  <div className="listItem">
+              <div className="info">
+                <div className="list pr-2">
+                  <div className="listItem pb-4">
                     <span>
                       <VerifiedIcon className="check"></VerifiedIcon>
                     </span>
-                    <span className="tech">Node JS</span>
+                    <span className="tech">
+                      {" "}
+                      Active Directory & Azure AD administration
+                    </span>
                   </div>
-                  <div className="listItem">
+                  <div className="listItem pb-4">
                     <span>
                       <VerifiedIcon className="check"></VerifiedIcon>
                     </span>
-                    <span className="tech"> Express JS</span>
+                    <span className="tech">
+                      {" "}
+                      Microsoft Azure & Cloud Services
+                    </span>
                   </div>
-                  <div className="listItem">
+                  <div className="listItem pb-4">
                     <span>
                       <VerifiedIcon className="check"></VerifiedIcon>
                     </span>
-                    <span className="tech">Rest APIs</span>
+                    <span className="tech">
+                      {" "}
+                      Server Management: Windows Server, Ubuntu Server, DNS/DHCP
+                      Server
+                    </span>
                   </div>
-                  <div className="listItem">
+                  <div className="listItem pb-4">
                     <span>
                       <VerifiedIcon className="check"></VerifiedIcon>
                     </span>
-                    <span className="tech"> Flask</span>
+                    <span className="tech">
+                      {""}
+                      Cybersecurity Basics: Multi-Factor Authentication,
+                      Password Management
+                    </span>
                   </div>
-                  <div className="listItem">
+                  <div className="listItem pb-4">
                     <span>
                       <VerifiedIcon className="check"></VerifiedIcon>
                     </span>
-                    <span className="tech"> My SQL</span>
-                  </div>
-                  <div className="listItem">
-                    <span>
-                      <VerifiedIcon className="check"></VerifiedIcon>
+                    <span className="tech">
+                      {" "}
+                      Ticketing & ITSM Tools: ServiceNow, Zendesk, ConnectWise,
+                      Jira Service Management
                     </span>
-                    <span className="tech"> PostgreSQL</span>
-                  </div>
-                  <div className="listItem">
-                    <span>
-                      <VerifiedIcon className="check"></VerifiedIcon>
-                    </span>
-                    <span className="tech"> MongoDB</span>
-                  </div>
-                  <div className="listItem">
-                    <span>
-                      <VerifiedIcon className="check"></VerifiedIcon>
-                    </span>
-                    <span className="tech"> AWS & Azure</span>
-                  </div>
-                  <div className="listItem">
-                    <span>
-                      <VerifiedIcon className="check"></VerifiedIcon>
-                    </span>
-                    <span className="tech"> Docker</span>
-                  </div>
-                  <div className="listItem">
-                    <span>
-                      <VerifiedIcon className="check"></VerifiedIcon>
-                    </span>
-                    <span className="tech">CI CD pipelines</span>
-                  </div>
-                  <div className="listItem">
-                    <span>
-                      <VerifiedIcon className="check"></VerifiedIcon>
-                    </span>
-                    <span className="tech">Python</span>
                   </div>
                 </div>
               </div>
             </Tilt>
           </div>
         </div>
-
-        <div className="row">
+        <div className="frontend ">
           <div className="skill-img" ref={skill5}>
             <div className="section-title">
-              <h3 className="sub-title-white">Tools & Technologies:</h3>
+              <h3 className="title blue-text-gradient ">
+                Tools & Technologies:
+              </h3>
             </div>
             <div className="row icons-row">
               {icons.map((item) => {
