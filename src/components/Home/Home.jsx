@@ -102,12 +102,12 @@ function Home() {
               </span>
             </h3>
             <h4 ref={info1} className="profession">
-              Web Developer
+              Technical Support Officer
             </h4>
             <p>
-              Passionate Web Developer skilled in frontend and backend
-              technologies, dedicated to crafting innovative web solutions and
-              aspiring to become a Full Stack Developer.
+              Hardworking and enthusiastic IT Support professional with proven
+              experience in troubleshooting, technical support, and delivering
+              exceptional customer service.
             </p>
             <Link to="contact">
               <span href="" className="btn btn-yellow slidebtn  ">
